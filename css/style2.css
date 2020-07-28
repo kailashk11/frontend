@@ -47,13 +47,26 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.t{
+float:left;
+}
+@@media only screen and (max-width:600px) {
+  t{
+    align-items:center;
+  }
+
+}
+
 #header {
   padding: 3px 0;
   height: 50px;
   transition: all 0.5s;
   z-index: 997;
-  background: #ff8c00;
+  background: #2ECAB6;
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+}
+.main{
+  align:center;
 }
 
 #header p {
@@ -66,9 +79,10 @@ h6 {
 
 #header #logo img {
   padding: 0px;
-  margin-left: 20px;
-  width: 33px;
-  height: 33px;
+  margin-left: 0px;
+
+  width: 37px;
+  height: 37px;
 }
 
 #header #logo p {
@@ -83,12 +97,19 @@ h6 {
   }
 
   #header #logo h1 {
+
     font-size: 34px;
   }
+  #header #logo p {
+    align-items: center;
+  }
+
 
   #header #logo img {
+    margin-left: 0px;
     max-height: 40px;
   }
+
 }
 
 @media (max-width:450px) {
@@ -244,7 +265,7 @@ h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(220, 220, 220, 0.9);
+  background: #2ECAB6;
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -262,10 +283,11 @@ h6 {
 }
 
 #mobile-nav ul li a {
-  color: #000;
+  color: #fff;
   font-size: 16px;
   overflow: hidden;
   padding: 10px 22px 10px 15px;
+  margin-left: 0px;
   position: relative;
   text-decoration: none;
   width: 100%;
@@ -273,8 +295,9 @@ h6 {
   outline: none;
 }
 
+
 #mobile-nav ul li a:hover {
-  color: #ff8c00;
+  color: black;
 }
 
 #mobile-nav ul li li {
@@ -334,7 +357,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width:450px) {
   #mobile-nav-toggle {
-    margin: 4px 20px 0 0;
+    margin: 0 20px 0 0;
   }
 }
 
