@@ -47,13 +47,26 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+.t{
+float:left;
+}
+@@media only screen and (max-width:600px) {
+  t{
+    align-items:center;
+  }
+
+}
+
 #header {
   padding: 3px 0;
   height: 50px;
   transition: all 0.5s;
   z-index: 997;
-  background: #ff8c00;
+  background: #2ECAB6;
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
+}
+.main{
+  align:center;
 }
 
 #header p {
@@ -66,9 +79,10 @@ h6 {
 
 #header #logo img {
   padding: 0px;
-  margin-left: 20px;
-  width: 33px;
-  height: 33px;
+  margin-left: 0px;
+
+  width: 37px;
+  height: 37px;
 }
 
 #header #logo p {
@@ -83,12 +97,24 @@ h6 {
   }
 
   #header #logo h1 {
+
     font-size: 34px;
+  }
+  #header #logo p {
+    align-items: center;
+  }
+  .fa-star,
+  .fa-home,
+  .fa-bed,
+  .fa-user-circle-o{
+    display:none;
   }
 
   #header #logo img {
+    margin-left: 0px;
     max-height: 40px;
   }
+
 }
 
 @media (max-width:450px) {
@@ -262,7 +288,7 @@ h6 {
 }
 
 #mobile-nav ul li a {
-  color: #000;
+  color: #fff;
   font-size: 16px;
   overflow: hidden;
   padding: 10px 22px 10px 15px;
@@ -274,7 +300,7 @@ h6 {
 }
 
 #mobile-nav ul li a:hover {
-  color: white;
+  color: black;
 }
 
 #mobile-nav ul li li {
