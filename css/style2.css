@@ -103,12 +103,7 @@ float:left;
   #header #logo p {
     align-items: center;
   }
-  .fa-star,
-  .fa-home,
-  .fa-bed,
-  .fa-user-circle-o{
-    display:none;
-  }
+
 
   #header #logo img {
     margin-left: 0px;
