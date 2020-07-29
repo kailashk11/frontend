@@ -70,7 +70,7 @@ float:left;
 }
 
 #header p {
-  color: white;
+  color: black;
   display: inline;
   margin-left: 5px;
   font-size: 17px;
@@ -87,7 +87,7 @@ float:left;
 
 #header #logo p {
   font-family: 'Open Sans', sans-serif;
-  font-style: italic;
+  
 }
 
 @media (max-width: 1000px) {
