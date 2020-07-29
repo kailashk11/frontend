@@ -106,8 +106,11 @@ float:left;
 
 
   #header #logo img {
-    margin-left: 0px;
-    max-height: 40px;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: : 5px;
+
+    max-height: 30px;
   }
 
 }
@@ -357,7 +360,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width:450px) {
   #mobile-nav-toggle {
-    margin: 0 20px 0 0;
+    margin: 0 5px 0 0;
   }
 }
 
@@ -432,7 +435,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   order: 4;
   flex: 0 1 auto;
   align-self: auto;
-  background-color: #ff9719;
+  background-color: #2ECAB6;
 }
 
 .search-container .search {
@@ -534,7 +537,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   order: 4;
   flex: 0 1 auto;
   align-self: auto;
-  background-color: #ff9719;
+  background-color: #2ECAB6;
   font-size: 14px;
 }
 
