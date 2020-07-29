@@ -29,6 +29,9 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css'>
   <link href="css/style2.css" rel="stylesheet">
   <link href="assets/css/login-partner.css" rel="stylesheet">
+  <link href="css/style2.css" rel="stylesheet">
+  <link href="assets/css/login-partner.css" rel="stylesheet">
+  <link href="assets/css/signup-modal.css" rel="stylesheet">
 <style>
 .row {
     display: -ms-flexbox;
@@ -42,9 +45,7 @@
 
 </style>
 
-<link href="css/style2.css" rel="stylesheet">
-<link href="assets/css/login-partner.css" rel="stylesheet">
-<link href="assets/css/signup-modal.css" rel="stylesheet">
+
 
 </head>
 
@@ -54,18 +55,17 @@
     Header
   ============================-->
   <header id="header" >
-    <div class="container-fluid" style="background-color:#2ECAB6;">
+    <div id="logo" class="pull-left">
+      <a href="index.html">
+        <img src="img/favicon.png" alt="logo">
+      </a>
+    </div>
 
-      <div id="logo" class="pull-left" style="margin-top:4px;">
-        <a href="index.html">
-          <img src="img/favicon.png" alt="logo">
-        </a>
-      </div>
-
-<div id="logo" class=" t" style="margin-top:5px;">
-        <a href="index.html">
-        <p  style="font-size:27px; text-align:center;">SheltOwn</p>
-        </a>
+<div id="logo" class="pull-left" style="margin-top:8px;">
+      <a href="index.html">
+      <p >SheltOwn</p>
+      </a>
+    </div>
       </div>
 
       <nav id="nav-menu-container">
@@ -1011,191 +1011,192 @@
     <!--Modal-->
 
 
-<div class="modal fade container-fluid" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Create Account</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body">
-                <div class="form-group">
-                    <form id="first">
-                        <div class="row" style="margin-top: 5px; margin-bottom: 15px;">
-                            <div class="col-sm-3"><input type="radio" name="user" checked><small>&nbspUser</small></div>
-                            <div class="col-sm-4"><input type="radio" name="user"><small>&nbspProperty Owner</small></div>
-                            <div class="col-sm-4"><input type="radio" name="user"><small>&nbspService Provider</small></div>
-                        </div>
-                        Enter your Phone Number<br>
-                        <input required type="tel" placeholder="+91" pattern="[7-9]{1}[0-9]{9}" maxlength="10" minlength="10" title="Enter a valid phone number" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;"><br>
-                        <small>Your information is safe with us</small>
-                        <br><br>
-                        <input required type="checkbox">&nbspBy continuing, you agree to our <a href="policy-page.html">Terms and Conditions</a>
-                        <br>
-                        <center><input type="submit" class="btn btn-success" value="Send OTP" style="margin: 5px 0;"></center>
-                        <center><small>Already have an account? <a href="#" id="btn4">Log In now</a></small></center>
-                    </form>
-                </div>
-                <div class="form-group">
-                    <form id="second" style="display:none;">
-                        <p>Phone Number: +91-1234567890 <button type="button" class="btn btn-secondary" id="back" style="float: right;">Change Number</button></p>
-                        <br>
-                        Enter OTP
-                        <input required type="text" placeholder="xxxxxx" minlength="6" maxlength="6" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;">
-                        <center><input type="submit" class="btn btn-success" value="Verify"></center>
-                        <br>
-                        <p>xx:xx time left<button type="button" class="btn btn-warning" style="float: right; padding: 3px;"><small>Resend OTP</small></button></p>
-                    </form>
-                </div>
-                <div class="form-group">
-                    <form id="third" style="display: none;">
-                        <p>Verified Phone Number: +91 1234567890</p>
-                        <table style="width: 100%">
-                            <tr>
-                                <td>Name&nbsp</td>
-                                <td><input required type="text" placeholder="Name" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;"></td>
-                            </tr>
-                            <tr>
-                                <td>Email&nbsp</td>
-                                <td><input required type="email" placeholder="e-mail" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;"></td>
-                            </tr>
-                            <tr>
-                                <td>Password&nbsp</td>
-                                <td><input required type="password" placeholder="Password" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;"></td>
-                            </tr>
-                        </table>
-                        <br>
-                        <center><input type="submit" class="btn btn-success" value="Create Account"></center>
-                    </form>
-                </div>
-                <div class="form-group">
-                    <form id="fourth" style="display:none;">
-                        <hr>
-                        <div class="google-btn" style="margin: 0 auto;">
-                            <div class="google-icon-wrapper">
-                                <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
-                            </div>
-                            <a href="#" class="btn-text"><b>Sign in with google</b></a>
-                        </div>
-                    </form>
-                </div>
-                <div class="form-group">
-                <hr>
-                <form id="fifth">
-                  <div class="row listbox" style="margin: 0 auto;">
-                    <div class="col-sm-6"><i class="fa fa-check"></i> Safety Guaranteed</div>
-                    <div class="col-sm-6"><i class="fa fa-check"></i> No Brokerage</div>
-                    <div class="col-sm-6"><i class="fa fa-check"></i> Ultimate Privacy</div>
-                    <div class="col-sm-6"><i class="fa fa-check"></i> Good Ambience</div>
-                    <div class="col-sm-6"><i class="fa fa-check"></i> Affordable</div>
-                    <div class="col-sm-6"><i class="fa fa-check"></i> Laissez-faire Policy</div>
-                    <div class="col-sm-6"><i class="fa fa-check"></i> SheltOwn Verified</div>
-                    <div class="col-sm-6"><i class="fa fa-check"></i> All-at-Home Services</div>
-                    <div class="col-sm-6"><i class="fa fa-check"></i> Round-the-Clock Assistance</div>
-                  </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div></div>
-<!--Modal-->
-
-<div class="modal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="width:100%">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-        <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Login as User</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-
-            <div class="modal-body" style="width:100%">
-                <div class="row container-fluid justify-content-center">
-  <div class="col div-log-in-user">
-
-
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="someone@example.com" required>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********" required>
-        <small id="emailHelp" class="form-text text-muted"><a href="# ">Forgot password?</a></small>
-      </div>
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Remember Details</label>
-      </div>
-      <div class="justify-content-around">
-      <button onclick="location.href = 'index-2.html';" type="submit" class="btn btn-primary btn-login-user" style="background-color:#FF8D1E;"><span>Submit   </span></button>
-    </form><br>
-    <button type="submit" class="btn btn-primary btn-login-user button" id="btn1" style="background-color:#90FF1E;"><span>Login as Partner</span></a></button>
-    <br>
-    </div>
-    <br>
-    <a>Don't have an account?</a> &nbsp;&nbsp;
-    <button type="submit" class="btn btn-primary btn-login-user" id="btn"><span>Sign Up</span></button>
-  </div>
-
-
-</div>
-
-            </div>
-        </div>
-    </div>
-
-</div>
-
-
-
-<!-- Modal -->
-<div class="modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="width:100%">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
+    <div class="modal fade container-fluid" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
                 <div class="modal-header">
-                <h4 class="modal-title" id="myModalLabel">Login as Partner</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-
-            <div class="modal-body" style="width:100%">
-                  <div class="row container-fluid justify-content-center">
-  <div class="col div-log-in-user">
-
-
-    <form>
-      <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="someone@example.com" required>
-      </div>
-      <div class="form-group">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********" required>
-        <small id="emailHelp" class="form-text text-muted"><a href="#">Forgot password?</a></small>
-      </div>
-      <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Remember Details</label>
-      </div>
-      <div class="justify-content-around">
-      <button onclick="location.href = 'index-2.html';" type="submit" class="btn btn-primary btn-login-user" style="background-color:#FF8D1E;"><a>Submit</a></button>
-    </form><br>
-    <button  type="submit" class="btn btn-primary btn-login-user button" id="btn3" style="background-color:#8D1EFF;"><span>Login as User  </span></button>
-    <br>
-    </div>
-    <br>
-    <a>Don't have an account?</a> &nbsp;&nbsp;
-    <button type="submit" class="btn btn-primary btn-login-user" id="btn2">Sign Up</a></button>
-  </div>
-
-
-</div>
-
+                    <h4 class="modal-title" id="myModalLabel">Create Account</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <form id="first">
+                            <div class="row" style="margin-top: 5px; margin-bottom: 15px;">
+                                <div class="col-sm-3"><input type="radio" name="user" checked><small>&nbspUser</small></div>
+                                <div class="col-sm-4"><input type="radio" name="user"><small>&nbspProperty Owner</small></div>
+                                <div class="col-sm-4"><input type="radio" name="user"><small>&nbspService Provider</small></div>
+                            </div>
+                            Enter your Phone Number<br>
+                            <input required type="tel" placeholder="+91" pattern="[7-9]{1}[0-9]{9}" maxlength="10" minlength="10" title="Enter a valid phone number" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;"><br>
+                            <small>Your information is safe with us</small>
+                            <br><br>
+                            <input required type="checkbox">&nbspBy continuing, you agree to our <a href="policy-page.html">Terms and Conditions</a>
+                            <br>
+                            <center><input type="submit" class="btn btn-success" value="Send OTP" style="margin: 5px 0;"></center>
+                            <center><small>Already have an account? <a href="#" id="btn4">Log In now</a></small></center>
+                        </form>
+                    </div>
+                    <div class="form-group">
+                        <form id="second" style="display:none;">
+                            <p>Phone Number: +91-1234567890 <button type="button" class="btn btn-secondary" id="back" style="float: right;">Change Number</button></p>
+                            <br>
+                            Enter OTP
+                            <input required type="text" placeholder="xxxxxx" minlength="6" maxlength="6" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;">
+                            <center><input type="submit" class="btn btn-success" value="Verify"></center>
+                            <br>
+                            <p>xx:xx time left<button type="button" class="btn btn-warning" style="float: right; padding: 3px;"><small>Resend OTP</small></button></p>
+                        </form>
+                    </div>
+                    <div class="form-group">
+                        <form id="third" style="display: none;">
+                            <p>Verified Phone Number: +91 1234567890</p>
+                            <table style="width: 100%">
+                                <tr>
+                                    <td>Name&nbsp</td>
+                                    <td><input required type="text" placeholder="Name" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;"></td>
+                                </tr>
+                                <tr>
+                                    <td>Email&nbsp</td>
+                                    <td><input required type="email" placeholder="e-mail" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;"></td>
+                                </tr>
+                                <tr>
+                                    <td>Password&nbsp</td>
+                                    <td><input required type="password" placeholder="Password" style="width:100%;border-radius: 5px; padding: 5px; margin: 5px 0;"></td>
+                                </tr>
+                            </table>
+                            <br>
+                            <center><input type="submit" class="btn btn-success" value="Create Account"></center>
+                        </form>
+                    </div>
+                    <div class="form-group">
+                        <form id="fourth" style="display:none;">
+                            <hr>
+                            <div class="google-btn" style="margin: 0 auto;">
+                                <div class="google-icon-wrapper">
+                                    <img class="google-icon" src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"/>
+                                </div>
+                                <a href="#" class="btn-text"><b>Sign in with google</b></a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="form-group">
+                    <hr>
+                    <form id="fifth">
+                      <div class="row listbox" style="margin: 0 auto;">
+                        <div class="col-sm-6"><i class="fa fa-check"></i> Safety Guaranteed</div>
+                        <div class="col-sm-6"><i class="fa fa-check"></i> No Brokerage</div>
+                        <div class="col-sm-6"><i class="fa fa-check"></i> Ultimate Privacy</div>
+                        <div class="col-sm-6"><i class="fa fa-check"></i> Good Ambience</div>
+                        <div class="col-sm-6"><i class="fa fa-check"></i> Affordable</div>
+                        <div class="col-sm-6"><i class="fa fa-check"></i> Laissez-faire Policy</div>
+                        <div class="col-sm-6"><i class="fa fa-check"></i> SheltOwn Verified</div>
+                        <div class="col-sm-6"><i class="fa fa-check"></i> All-at-Home Services</div>
+                        <div class="col-sm-6"><i class="fa fa-check"></i> Round-the-Clock Assistance</div>
+                      </div>
+                    </form>
+                </div>
             </div>
         </div>
+    </div></div>
+    <!--Modal-->
+
+    <div class="modal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="width:100%">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Login as User</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body" style="width:100%">
+                    <div class="row container-fluid justify-content-center">
+      <div class="col div-log-in-user">
+
+
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="someone@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********" required>
+            <small id="emailHelp" class="form-text text-muted"><a href="# ">Forgot password?</a></small>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember Details</label>
+          </div>
+          <div class="justify-content-around">
+          <button onclick="location.href = 'index-2.html';" type="submit" class="btn btn-primary btn-login-user" style="background-color:#FF8D1E;"><span>Submit   </span></button>
+        </form><br>
+        <button type="submit" class="btn btn-primary btn-login-user button" id="btn1" style="background-color:#90FF1E;"><span>Login as Partner</span></a></button>
+        <br>
+        </div>
+        <br>
+        <a>Don't have an account?</a> &nbsp;&nbsp;
+        <button type="submit" class="btn btn-primary btn-login-user" id="btn"><span>Sign Up</span></button>
+      </div>
+
+
     </div>
 
-</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="width:100%">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                    <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Login as Partner</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                </div>
+
+                <div class="modal-body" style="width:100%">
+                      <div class="row container-fluid justify-content-center">
+      <div class="col div-log-in-user">
+
+
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="someone@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********" required>
+            <small id="emailHelp" class="form-text text-muted"><a href="#">Forgot password?</a></small>
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Remember Details</label>
+          </div>
+          <div class="justify-content-around">
+          <button onclick="location.href = 'index-2.html';" type="submit" class="btn btn-primary btn-login-user" style="background-color:#FF8D1E;"><a>Submit</a></button>
+        </form><br>
+        <button  type="submit" class="btn btn-primary btn-login-user button" id="btn3" style="background-color:#8D1EFF;"><span>Login as User  </span></button>
+        <br>
+        </div>
+        <br>
+        <a>Don't have an account?</a> &nbsp;&nbsp;
+        <button type="submit" class="btn btn-primary btn-login-user" id="btn2">Sign Up</a></button>
+      </div>
+
+
+    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 
 <script>
 $('#first').submit(function(e){
