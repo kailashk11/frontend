@@ -255,10 +255,11 @@ float:left;
   transition: all 0.4s;
   outline: none;
   cursor: pointer;
+  color: black;
 }
 
 #mobile-nav-toggle i {
-  color: #fff;
+  color: #black;
 }
 
 /* Mobile Nav Styling */
