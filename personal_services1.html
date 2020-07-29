@@ -17,12 +17,13 @@
 
   <!-- Bootstrap CSS File -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-  
+
   <!-- Libraries CSS Files -->
-  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet"> 
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/style2.css" rel="stylesheet">
 <link href="assets/css/signup-modal.css" rel="stylesheet">
-
+<link href="assets/css/login-partner.css" rel="stylesheet">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css'>
 
 <style>
      /** page layout **/
@@ -31,7 +32,7 @@
       grid-template-columns: 18% 82%;
       max-width: 100em;
       width: 100%;
-     
+
     }
 
     section {
@@ -162,7 +163,7 @@ body {height:700px;overflow-x:hidden;}
     width: 100%;
     display: block;
   }
- 
+
   .tab button {
 display: block;
   background-color: inherit;
@@ -201,7 +202,7 @@ font-weight: bold;
   padding: 0 8px;
 }
 .left{
-width:8%;
+width:10%;
 }
 .right{
 float:left;
@@ -219,7 +220,7 @@ hr.new1 {
 .demo-solution--flexbox {
   display: flex;
   align-items: center;
-  
+
 }
 
 </style>
@@ -229,48 +230,45 @@ hr.new1 {
   <!--==========================
     Header
   ============================-->
-  <header id="header">
-    <div class="container-fluid">
-<div id="logo" class="pull-left">
-        <a href="index.html">
-          <img src="img/favicon.png" alt="logo">
-        </a>
-      </div>
+
+  <header id="header" >
+    <div id="logo" class="pull-left">
+      <a href="index.html">
+        <img src="img/favicon.png" alt="logo">
+      </a>
+    </div>
 
 <div id="logo" class="pull-left" style="margin-top:8px;">
-        <a href="index.html">
-        <p >SheltOwn</p>
-        </a>
-      </div>
+      <a href="index.html">
+      <p >SheltOwn</p>
+      </a>
+    </div>
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
-          <li><a href="index.html">Home</a></li>
-          <li class="menu-has-children menu-active"><a>Our Services</a>
-            <ul>
-              <li><a href="personal_services1.html">Personalised Services</a></li>
-              <li><a href="rental-services.html">Rental Services</a></li>
-            </ul>
-          </li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="blog-description-page.html">Blogs</a></li>
-          <li><a href="login-user.html">Log In</a></li>
-           <li><a data-toggle="modal" data-target="#myModal">Sign Up</a></li>
+          <li ><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> &nbsp;Home</a></li>
+      <li class="menu-active"><a href="personal_services1.html"><i class="fa fa-star" aria-hidden="true" style="color:white;"></i> &nbsp;Personalised</a></li>
+              <li><a href="rental-services.html"><i class="fa fa-bed" aria-hidden="true" style="color:white;"></i> &nbsp;Rental</a></li>
+
+
+
+          <li><a data-toggle="modal" data-target="#myModal1"><i class="fa fa-user-circle-o" aria-hidden="true" style="color:white;"></i> &nbsp;Log in/Sign up</a></li>
+
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-  
+
  <main>
-<div class="tab" style="background-color:#fff;">
+<div class="tab" style="background-color:#fff; ">
 <button class="tablinks" onclick="openCity(event, 'PersonalCare')" id="defaultOpen">Personal Care</button>
 <button class="tablinks" onclick="openCity(event, 'HomeCare')" id="defaultOpen">Home Care</button>
-<button class="tablinks" onclick="openCity(event, 'Repair')" id="defaultOpen">Repair & Maintanance</button>
+<button class="tablinks" onclick="openCity(event, 'Repair')" id="defaultOpen" style="font-size:8px;">Repair & Maintanance</button>
 <button class="tablinks" onclick="openCity(event, 'EduSmart')" id="defaultOpen">EduSmart</button>
 <!-----<button class="tablinks" onclick="openCity(event, 'PersonalCare')" id="defaultOpen">Others</button> ------>
 </div>
-<section id="PersonalCare" class="tabcontent" style="padding-right: 30px;">
-  
+<section id="PersonalCare" class="tabcontent" style="padding-right: 30px; ">
+
 <div class="row">
   <div class="column">
     <div class="card">
@@ -286,21 +284,21 @@ hr.new1 {
     <div class="card">
      <img src="img/perser/trainerwomen.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-      
+
         <p class="title">FITNESS (FEMALE)</p>
-       
+
         <a href="personal_services_personal.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
-  
+
   <div class="column">
     <div class="card">
       <img src="img/perser/salon.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-     
+
         <p class="title">SALON (FEMALE)</p>
-       
+
         <a href="personal_services_personal.html" class="button">Book Now</a>
     </div>
   </div>
@@ -311,7 +309,7 @@ hr.new1 {
     <div class="card">
       <img src="img/perser/haircare.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-     
+
         <p class="title">HAIRCARE (MALE)</p>
        <a href="personal_services_personal.html" class="button">Book Now</a>
         </div>
@@ -321,24 +319,24 @@ hr.new1 {
 </div>
 
 <div class="row">
-  
+
   <div class="column">
     <div class="card">
       <img src="img/perser/skincaremen.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-   
+
         <p class="title">SKINCARE (MALE)</p>
-       
+
      <a href="personal_services_personal.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
-  
+
   <div class="column">
     <div class="card">
       <img src="img/perser/skincare.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-     
+
         <p class="title">SKINCARE (FEMALE)</p>
        <a href="personal_services_personal.html" class="button">Book Now</a>
         </div>
@@ -351,16 +349,16 @@ hr.new1 {
 
 <!------------------------------------------------------------------Home care--------------------------------------------------------------------------------------------->
 <div id="HomeCare" class="tabcontent" style="padding-right: 30px;">
-  
+
 <div class="row">
   <div class="column">
     <div class="card">
       <img src="img/perser/plumber.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
         <p class="title">Plumbers</p>
-        
+
         <a href="personal_services_home.html" class="button">Book Now</a>
-      
+
       </div>
     </div>
   </div>
@@ -369,21 +367,21 @@ hr.new1 {
     <div class="card">
      <img src="img/perser/carpenter.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-      
+
         <p class="title">Carpenters</p>
-       
+
        <a href="personal_services_home.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
-  
+
   <div class="column">
     <div class="card">
       <img src="img/perser/electrician.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-     
+
         <p class="title">Electricians</p>
-       
+
         <a href="personal_services_home.html" class="button">Book Now</a>
       </div>
     </div>
@@ -393,9 +391,9 @@ hr.new1 {
     <div class="card">
       <img src="img/perser/painter.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-        
+
         <p class="title">Painters</p>
-        
+
        <a href="personal_services_home.html" class="button">Book Now</a>
       </div>
     </div>
@@ -407,21 +405,21 @@ hr.new1 {
     <div class="card">
      <img src="img/perser/kitchencare.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-      
+
         <p class="title">KitchenCare</p>
-       
+
        <a href="personal_services_home.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
-  
+
   <div class="column">
     <div class="card">
       <img src="img/perser/bathroomcare.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-     
+
         <p class="title">Bathroom Care</p>
-      
+
         <a href="personal_services_home.html" class="button">Book Now</a>
       </div>
     </div>
@@ -431,22 +429,22 @@ hr.new1 {
     <div class="card">
      <img src="img/perser/waste.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-      
+
         <p class="title">Waste Management</p>
-       
+
        <a href="personal_services_home.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
- 
+
 
   <div class="column">
     <div class="card">
      <img src="img/perser/pest.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-      
+
         <p class="title">Pest control</p>
-       
+
       <a href="personal_services_home.html" class="button">Book Now</a>
       </div>
     </div>
@@ -457,20 +455,20 @@ hr.new1 {
     <div class="card">
       <img src="img/perser/maids.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-     
+
         <p class="title">Maid</p>
-     
+
         <a href="personal_services_home.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
 
-  
+
 <div class="column">
     <div class="card">
       <img src="img/perser/deepclean.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-        
+
         <p class="title">Deep Cleaning(HOUSE)</p>
     <a href="personal_services_home.html" class="button">Book Now</a>
       </div>
@@ -481,9 +479,9 @@ hr.new1 {
     <div class="card">
       <img src="img/perser/sofacare.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-        
+
         <p class="title">Sofa & Carpet Care</p>
-      
+
        <a href="personal_services_home.html" class="button">Book Now</a>
       </div>
     </div>
@@ -495,7 +493,7 @@ hr.new1 {
 
 <!---------------------------------------------------------Edumart ------------------------------------------------------------------------------------------>
 <section id="EduSmart" class="tabcontent" style="padding-right: 30px;">
-  
+
 <div class="row">
   <div class="column">
     <div class="card">
@@ -511,21 +509,21 @@ hr.new1 {
     <div class="card">
      <img src="img/perser/tutionfemale.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-      
+
         <p class="title">HOME TUTION-FEMALE</p>
-       
+
         <a href="personal_services_edu.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
-  
+
   <div class="column">
     <div class="card">
       <img src="img/perser/paper.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-     
+
         <p class="title">PAPERS & MAGAZINES</p>
-       
+
         <a href="personal_services_edu.html" class="button">Book Now</a>
     </div>
   </div>
@@ -536,28 +534,28 @@ hr.new1 {
     <div class="card">
       <img src="img/perser/digest.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-     
+
         <p class="title">SHELTOWN - DIGEST</p>
        <a href="blog-description-page.html" class="button">Read Now</a>
         </div>
       </div>
     </div>
-  
+
 </div>
 </section>
-  
-  
+
+
 <!-------------------------------------------------------------------------Repair & Maintanance ---------------------------------------------------->
 <div id="Repair" class="tabcontent" style="padding-right: 30px;">
-  
+
 <div class="row">
   <div class="column">
     <div class="card">
       <img src="img/perser/ac.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-        
+
         <p class="title">AC</p>
-        
+
         <a href="personal_services_repair.html" class="button">Book Now</a>
       </div>
     </div>
@@ -567,21 +565,21 @@ hr.new1 {
     <div class="card">
      <img src="img/perser/tv.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-      
+
         <p class="title">TV</p>
-       
+
        <a href="personal_services_repair.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
-  
+
   <div class="column">
     <div class="card">
       <img src="img/perser/water.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-     
+
         <p class="title">WATER PURIFIER</p>
-       
+
         <a href="personal_services_repair.html" class="button">Book Now</a>
       </div>
     </div>
@@ -590,9 +588,9 @@ hr.new1 {
     <div class="card">
       <img src="img/perser/inverter.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-      
+
         <p class="title">BATTERY</p>
-     
+
       <a href="personal_services_repair.html" class="button">Book Now</a>
       </div>
     </div>
@@ -604,7 +602,7 @@ hr.new1 {
     <div class="card">
       <img src="img/perser/washin.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-        
+
         <p class="title">WASHING MACHINE</p>
     <a href="personal_services_repair.html" class="button">Book Now</a>
       </div>
@@ -615,21 +613,21 @@ hr.new1 {
     <div class="card">
      <img src="img/perser/fridge.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-      
+
         <p class="title">REFRIGERATOR</p>
-       
+
        <a href="personal_services_repair.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
-  
+
   <div class="column">
     <div class="card">
       <img src="img/perser/microwave.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-     
+
         <p class="title">MICROWAVE</p>
-      
+
         <a href="personal_services_repair.html" class="button">Book Now</a>
       </div>
     </div>
@@ -639,9 +637,9 @@ hr.new1 {
     <div class="card">
       <img src="img/perser/geyser.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-        
+
         <p class="title">GEYSER</p>
-      
+
        <a href="personal_services_repair.html" class="button">Book Now</a>
       </div>
     </div>
@@ -653,21 +651,21 @@ hr.new1 {
     <div class="card">
      <img src="img/perser/chimney.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-      
+
         <p class="title">CHIMNEY</p>
-       
+
       <a href="personal_services_repair.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
-  
+
   <div class="column">
     <div class="card">
       <img src="img/perser/aircooler.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-     
+
         <p class="title">AIR COOLER</p>
-     
+
         <a href="personal_services_repair.html" class="button">Book Now</a>
       </div>
     </div>
@@ -677,9 +675,9 @@ hr.new1 {
     <div class="card">
       <img src="img/perser/fan.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-        
+
         <p class="title">FAN</p>
-        
+
        <a href="personal_services_repair.html" class="button">Book Now</a>
       </div>
     </div>
@@ -689,36 +687,36 @@ hr.new1 {
     <div class="card">
      <img src="img/perser/mobile.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-      
+
         <p class="title">MOBILE</p>
-       
+
        <a href="personal_services_repair.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
 </div>
 <div class="row">
-  
+
   <div class="column">
     <div class="card">
       <img src="img/perser/stablizer.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-     
+
         <p class="title">INVERTER & STABILIZER</p>
       <a href="personal_services_repair.html" class="button">Book Now</a>
       </div>
     </div>
   </div>
 
- 
+
 
   <div class="column">
     <div class="card">
       <img src="img/perser/fullhouse.jpeg" alt="Jane" style="width:100%;height:170px;border-radius: 6px 6px 0px 0px ;">
       <div class="container">
-   
+
         <p class="title">WIRING CHECK(HOUSE)</p>
-       
+
      <a href="personal_services_repair.html" class="button">Book Now</a>
       </div>
     </div>
@@ -1074,6 +1072,8 @@ We are with you whenever you are in need!
     </div>
   </section><!-- #footer -->
 <!--Modal-->
+
+
 <div class="modal fade container-fluid" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -1084,7 +1084,7 @@ We are with you whenever you are in need!
             <div class="modal-body">
                 <div class="form-group">
                     <form id="first">
-                        <div class="row" style="margin-top: 5px; margin-bottom: 15px;"> 
+                        <div class="row" style="margin-top: 5px; margin-bottom: 15px;">
                             <div class="col-sm-3"><input type="radio" name="user" checked><small>&nbspUser</small></div>
                             <div class="col-sm-4"><input type="radio" name="user"><small>&nbspProperty Owner</small></div>
                             <div class="col-sm-4"><input type="radio" name="user"><small>&nbspService Provider</small></div>
@@ -1096,7 +1096,7 @@ We are with you whenever you are in need!
                         <input required type="checkbox">&nbspBy continuing, you agree to our <a href="policy-page.html">Terms and Conditions</a>
                         <br>
                         <center><input type="submit" class="btn btn-success" value="Send OTP" style="margin: 5px 0;"></center>
-                        <center><small>Already have an account? <a href="login-user.html">Log In now</a></small></center>
+                        <center><small>Already have an account? <a href="#" id="btn4">Log In now</a></small></center>
                     </form>
                 </div>
                 <div class="form-group">
@@ -1142,7 +1142,7 @@ We are with you whenever you are in need!
                         </div>
                     </form>
                 </div>
-                <div class="form-group"> 
+                <div class="form-group">
                 <hr>
                 <form id="fifth">
                   <div class="row listbox" style="margin: 0 auto;">
@@ -1160,35 +1160,135 @@ We are with you whenever you are in need!
             </div>
         </div>
     </div>
+</div></div>
+<!--Modal-->
+
+<div class="modal" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="width:100%">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Login as User</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+
+            <div class="modal-body" style="width:100%">
+                <div class="row container-fluid justify-content-center">
+  <div class="col div-log-in-user">
+
+
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="someone@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********" required>
+        <small id="emailHelp" class="form-text text-muted"><a href="# ">Forgot password?</a></small>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Remember Details</label>
+      </div>
+      <div class="justify-content-around">
+      <button onclick="location.href = 'index-2.html';" type="submit" class="btn btn-primary btn-login-user" style="background-color:#FF8D1E;"><span>Submit   </span></button>
+    </form><br>
+    <button type="submit" class="btn btn-primary btn-login-user button" id="btn1" style="background-color:#90FF1E;"><span>Login as Partner</span></a></button>
+    <br>
+    </div>
+    <br>
+    <a>Don't have an account?</a> &nbsp;&nbsp;
+    <button type="submit" class="btn btn-primary btn-login-user" id="btn"><span>Sign Up</span></button>
+  </div>
+
+
 </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="width:100%">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+                <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">Login as Partner</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            </div>
+
+            <div class="modal-body" style="width:100%">
+                  <div class="row container-fluid justify-content-center">
+  <div class="col div-log-in-user">
+
+
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="someone@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="********" required>
+        <small id="emailHelp" class="form-text text-muted"><a href="#">Forgot password?</a></small>
+      </div>
+      <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Remember Details</label>
+      </div>
+      <div class="justify-content-around">
+      <button onclick="location.href = 'index-2.html';" type="submit" class="btn btn-primary btn-login-user" style="background-color:#FF8D1E;"><a>Submit</a></button>
+    </form><br>
+    <button  type="submit" class="btn btn-primary btn-login-user button" id="btn3" style="background-color:#8D1EFF;"><span>Login as User  </span></button>
+    <br>
+    </div>
+    <br>
+    <a>Don't have an account?</a> &nbsp;&nbsp;
+    <button type="submit" class="btn btn-primary btn-login-user" id="btn2">Sign Up</a></button>
+  </div>
+
+
+</div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
 
 
 <script>
 $('#first').submit(function(e){
-    $('#first').hide(); 
-    $('#second').show(); 
-    $('#third').hide(); 
-    $('#fourth').hide(); 
+    $('#first').hide();
+    $('#second').show();
+    $('#third').hide();
+    $('#fourth').hide();
     e.preventDefault();
-    // Or with: return false;        
+    // Or with: return false;
 });
 $('#second').submit(function(e){
-    $('#first').hide(); 
+    $('#first').hide();
     $('#second').hide();
-    $('#third').show(); 
-     $('#fourth').show(); 
+    $('#third').show();
+     $('#fourth').show();
      $('#fifth').hide();
     e.preventDefault();
-    // Or with: return false;        
+    // Or with: return false;
 });
 
 $('#back').click(function(e){
-    $('#first').show(); 
-    $('#second').hide(); 
-    $('#third').hide(); 
-    $('#fourth').hide(); 
+    $('#first').show();
+    $('#second').hide();
+    $('#third').hide();
+    $('#fourth').hide();
     e.preventDefault();
-    // Or with: return false;        
+    // Or with: return false;
 });
 </script>
 
@@ -1215,7 +1315,7 @@ $('#back').click(function(e){
       }, false)
     }())
   </script>
-  
+
 
   <!--  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a> -->
   <script type="text/javascript">
@@ -1241,14 +1341,14 @@ $('#back').click(function(e){
   <script src="lib/sticky/sticky.js"></script>
 
 
- 
+
   <script src="js/main.js"></script>
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-   
+
     <!-- Template Main Javascript File -->
     <script src="js/main.js"></script>
 
@@ -1275,12 +1375,62 @@ document.getElementById("defaultOpen").click();
 var prefix = "tab_";
 if (hash) {
     $('.tablinks a[href="'+hash.replace(prefix,"")+'"]').tab('show');
-} 
+}
 
 // Change hash for page-reload
 $('.tablinks a').on('shown', function (e) {
     window.location.hash = e.target.hash.replace("#", "#" + prefix);
 });
+    </script>
+    <script>
+    $("#btn").on( "click", function() {
+            $('#myModal1').modal('hide');
+    });
+    //trigger next modal
+    $("#btn").on( "click", function() {
+            $('#myModal').modal('show');
+    });
+
+    </script>
+    <script>
+    $("#btn1").on( "click", function() {
+            $('#myModal1').modal('hide');
+    });
+    //trigger next modal
+    $("#btn1").on( "click", function() {
+            $('#myModal2').modal('show');
+    });
+
+    </script>
+    <script>
+    $("#btn2").on( "click", function() {
+            $('#myModal2').modal('hide');
+    });
+    //trigger next modal
+    $("#btn2").on( "click", function() {
+            $('#myModal').modal('show');
+    });
+
+    </script>
+    <script>
+    $("#btn3").on( "click", function() {
+            $('#myModal2').modal('hide');
+    });
+    //trigger next modal
+    $("#btn3").on( "click", function() {
+            $('#myModal1').modal('show');
+    });
+
+    </script>
+    <script>
+    $("#btn4").on( "click", function() {
+            $('#myModal').modal('hide');
+    });
+    //trigger next modal
+    $("#btn4").on( "click", function() {
+            $('#myModal1').modal('show');
+    });
+
     </script>
 </body>
 
