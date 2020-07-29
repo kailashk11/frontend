@@ -99,6 +99,7 @@
 
     .btn {
       font-size: 18px;
+      color: black;
     }
   /** page layout **/
     main {
@@ -139,7 +140,9 @@ padding:1px;
   margin-left:50px;
 }
 }
-
+.free{
+  text-decoration: none;
+}
   </style>
 
 </head>
@@ -160,22 +163,20 @@ padding:1px;
       <p >SheltOwn</p>
       </a>
     </div>
+      </div>
 
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li ><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> &nbsp;Home</a></li>
-      <li ><a href="personal_services1.html"><i class="fa fa-star" aria-hidden="true" style="color:white;"></i> &nbsp;Personalised</a></li>
-              <li class="menu-active"><a href="rental-services.html"><i class="fa fa-bed" aria-hidden="true" style="color:white;"></i> &nbsp;Rental</a></li>
+      <nav id="nav-menu-container" >
+        <ul class="nav-menu" style="text-decoration:none;">
+          <li class="menu-active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> &nbsp;Home</a></li>
+      <li><a href="personal_services1.html"><i class="fa fa-star" aria-hidden="true" ></i> &nbsp;Personalised</a></li>
+              <li><a href="rental-services.html"><i class="fa fa-bed" aria-hidden="true" ></i> &nbsp;Rental</a></li>
 
-
-
-          <li><a data-toggle="modal" data-target="#myModal1"><i class="fa fa-user-circle-o" aria-hidden="true" style="color:white;"></i> &nbsp;Log in/Sign up</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#myModal1"><i class="fa fa-user-circle-o" aria-hidden="true"></i> &nbsp;Log in/Sign up</a></li>
 
         </ul>
       </nav><!-- #nav-menu-container -->
     </div>
   </header><!-- #header -->
-
 
   <main>
    <!-- Start Properties  -->
@@ -1171,7 +1172,10 @@ padding:1px;
 
 
 
-   <div class="modal " id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+   <!--Modal-->
+
+
+   <div class="modal fade container-fluid" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
        <div class="modal-dialog" role="document">
            <div class="modal-content">
                <div class="modal-header">
@@ -1284,18 +1288,18 @@ padding:1px;
            <small id="emailHelp" class="form-text text-muted"><a href="# ">Forgot password?</a></small>
          </div>
          <div class="form-group form-check">
-           <input type="checkbox" class="form-check-input" id="exampleCheck1"><span>&nbsp;&nbsp;</span>
-           <label class="form-check-label" for="exampleCheck1">&nbsp;Remember Details</label>
+           <input type="checkbox" class="form-check-input" id="exampleCheck1">
+           <label class="form-check-label" for="exampleCheck1">Remember Details</label>
          </div>
          <div class="justify-content-around">
-         <button onclick="location.href = 'index-2.html';" type="submit" class="btn btn-primary btn-login-user" style="background-color:#FF8D1E;"><span>Submit   </span></button>
+         <button onclick="location.href = 'index-2.html';" type="submit" class="btn btn-primary btn-login-user" style="background-color:#2ECAB6;"><span>Submit   </span></button>
        </form><br>
-       <button type="submit" class="btn btn-primary btn-login-user button" id="btn1" style="background-color:#90FF1E;"><span>Login as Partner</span></a></button>
+       <button type="submit" class="btn btn-primary btn-login-user button" id="btn1" style="background-color:orange; "><span style="color:black;">Login as Partner</span></a></button>
        <br>
        </div>
        <br>
        <a>Don't have an account?</a> &nbsp;&nbsp;
-       <button type="submit" class="btn btn-primary btn-login-user" id="btn"><span>Sign Up</span></button>
+       <button type="submit" class="btn btn-primary btn-login-user" id="btn" style="background-color:#2ECAB6;"><span>Sign Up</span></button>
      </div>
 
 
@@ -1334,18 +1338,18 @@ padding:1px;
            <small id="emailHelp" class="form-text text-muted"><a href="#">Forgot password?</a></small>
          </div>
          <div class="form-group form-check">
-           <input type="checkbox" class="form-check-input" id="exampleCheck1"><span>&nbsp;&nbsp;</span>
+           <input type="checkbox" class="form-check-input" id="exampleCheck1">
            <label class="form-check-label" for="exampleCheck1">Remember Details</label>
          </div>
          <div class="justify-content-around">
-         <button onclick="location.href = 'index-2.html';" type="submit" class="btn btn-primary btn-login-user" style="background-color:#FF8D1E;"><a>Submit</a></button>
+         <button onclick="location.href = 'index-2.html';" type="submit" class="btn btn-primary btn-login-user" style="background-color:#2ECAB6;"><a>Submit</a></button>
        </form><br>
-       <button  type="submit" class="btn btn-primary btn-login-user button" id="btn3" style="background-color:#8D1EFF;"><span>Login as User  </span></button>
+       <button  type="submit" class="btn btn-primary btn-login-user button" id="btn3" style="background-color:orange; "><span style="color:black;">Login as User  </span></button>
        <br>
        </div>
        <br>
        <a>Don't have an account?</a> &nbsp;&nbsp;
-       <button type="submit" class="btn btn-primary btn-login-user" id="btn2">Sign Up</a></button>
+       <button type="submit" class="btn btn-primary btn-login-user" id="btn2" style="background-color:#2ECAB6;">Sign Up</a></button>
      </div>
 
 
@@ -1356,7 +1360,6 @@ padding:1px;
        </div>
 
    </div>
-
 
 
 
