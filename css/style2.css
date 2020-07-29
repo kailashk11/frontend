@@ -79,15 +79,15 @@ float:left;
 
 #header #logo img {
   padding: 0px;
-  margin-left: 0px;
-
+  margin-left: 5px;
+  color:black;
   width: 37px;
   height: 37px;
 }
 
 #header #logo p {
   font-family: 'Open Sans', sans-serif;
-  
+  color: black;
 }
 
 @media (max-width: 1000px) {
@@ -106,7 +106,7 @@ float:left;
 
 
   #header #logo img {
-    margin-left: 10px;
+    margin-left: 0px;
     margin-top: 5px;
     margin-bottom: : 5px;
 
