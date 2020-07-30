@@ -79,10 +79,11 @@ float:left;
 
 #header #logo img {
   padding: 0px;
-  margin-left: 5px;
+  margin-left: 10px;
+  margin-top: 0px;
   color:black;
-  width: 37px;
-  height: 37px;
+  width: 100px;
+  height: 40px;
 }
 
 #header #logo p {
@@ -429,14 +430,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   min-height: 48px;
   min-width: 10px;
   word-wrap: nowrap;
-  background: #000;
+
   color: #black;
   border: 0;
   border-radius: 5px;
   order: 4;
   flex: 0 1 auto;
   align-self: auto;
-  background-color: #2ECAB6;
+  background-color:#FFCA0B;
 }
 
 .search-container .search {
@@ -538,7 +539,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   order: 4;
   flex: 0 1 auto;
   align-self: auto;
-  background-color: #2ECAB6;
+  background-color:#FFCA0B;
   font-size: 14px;
 }
 
@@ -1339,4 +1340,5 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .modal .btn{
   color:black;
+  background-color: #5bc0de;
 }
