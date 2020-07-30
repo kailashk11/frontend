@@ -146,7 +146,7 @@
 
 
 <!--Search Bar -->
-<section id="search-jobs">
+<!-- <section id="search-jobs">
   <div class="container">
      <br>
        <div class="search-container" id="search-job-1">
@@ -200,9 +200,10 @@
   </div>
 </section>
 
-<br>
+<br> -->
 
 <!-- Jobs -->
+<br>
 <div class="container">
     <div class="row justify-content-between">
         <div id="jobs-card" class="col-md-8 middle">
@@ -221,7 +222,8 @@
                     <ul class="col-sm-6">
                         <li><i class="fa fa-black-tie"></i> Relevant Experience: Freshers may apply</li>
                         <li><i class="fa fa-calendar"></i> No date</li>
-                        <button class="btn btn-success btn-sm" style="margin-left: 0; margin-top: 5px;">Apply</button>
+                        <button onclick="msg()" class="btn btn-success btn-sm" style="margin-left: 0; margin-top: 5px;">Apply</button>
+</br>
                     </ul>
                 </div>
             </div>
@@ -600,7 +602,7 @@ We help you to find your match, book rental homes of choice across Indian cities
             <div class="modal-body">
                 <div class="form-group">
                     <form id="first">
-                        <div class="row" style="margin-top: 5px; margin-bottom: 15px;"> 
+                        <div class="row" style="margin-top: 5px; margin-bottom: 15px;">
                             <div class="col-sm-3"><input type="radio" name="user" checked><small>&nbspUser</small></div>
                             <div class="col-sm-4"><input type="radio" name="user"><small>&nbspProperty Owner</small></div>
                             <div class="col-sm-4"><input type="radio" name="user"><small>&nbspService Provider</small></div>
@@ -658,7 +660,7 @@ We help you to find your match, book rental homes of choice across Indian cities
                         </div>
                     </form>
                 </div>
-                <div class="form-group"> 
+                <div class="form-group">
                 <hr>
                 <form id="fifth">
                   <div class="row listbox" style="margin: 0 auto;">
@@ -681,30 +683,30 @@ We help you to find your match, book rental homes of choice across Indian cities
 
 <script>
 $('#first').submit(function(e){
-    $('#first').hide(); 
-    $('#second').show(); 
-    $('#third').hide(); 
-    $('#fourth').hide(); 
+    $('#first').hide();
+    $('#second').show();
+    $('#third').hide();
+    $('#fourth').hide();
     e.preventDefault();
-    // Or with: return false;        
+    // Or with: return false;
 });
 $('#second').submit(function(e){
-    $('#first').hide(); 
+    $('#first').hide();
     $('#second').hide();
-    $('#third').show(); 
-     $('#fourth').show(); 
+    $('#third').show();
+     $('#fourth').show();
      $('#fifth').hide();
     e.preventDefault();
-    // Or with: return false;        
+    // Or with: return false;
 });
 
 $('#back').click(function(e){
-    $('#first').show(); 
-    $('#second').hide(); 
-    $('#third').hide(); 
-    $('#fourth').hide(); 
+    $('#first').show();
+    $('#second').hide();
+    $('#third').hide();
+    $('#fourth').hide();
     e.preventDefault();
-    // Or with: return false;        
+    // Or with: return false;
 });
 </script>
 
@@ -752,5 +754,15 @@ function help() {
 </script>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+</script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+ <script type="text/javascript">
+ function msg(){
+   alert("Click on Choose File button to upload your resume")
+ }
+
+</script>
+
 </body>
 </html>
