@@ -10,7 +10,7 @@
 .container-fluidrent {
     padding-right: 15px;
     padding-left: 15px;
-    
+
 }
 .property {
   margin-top: 20px;
@@ -213,10 +213,11 @@
 
 .know-section button {
   background-color: white;
-  color: #ff971d;
+  color: black;
   padding: 5px 30px;
   margin: 5px;
-  border: 1px solid #ff971d;
+  border: 1px solid #5BC0DE;
+  background-color:#5BC0DE;
   border-radius: 100px;
   width: 150px;
 }
@@ -362,4 +363,6 @@ ul_de li::before {
   margin-top: 20px;
   margin-bottom: 30px;
 }
-
+.fa{
+  color: #5BC0DE;
+}
